@@ -1,0 +1,33 @@
+.navbar{
+    width: 296px;
+    height: 100vh;
+    position: fixed;
+    a{
+        display: block;
+
+    }
+    .navTop{
+        width: 100%;
+    }
+    &Logo a{
+        width: 151px;
+        height: 40px;
+        background-image: url(../images/logo-ANSWER.svg);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        @include hideText;
+    }
+    .nav-link:hover {
+        color: $success !important;
+        background-color: $gray-200;
+        border-left: 4px solid $success;
+        span{
+            padding-left: 28px;
+        }
+    }
+    img{
+        width: 40px;
+        height: 40px;
+    }
+}
